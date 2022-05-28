@@ -1,0 +1,140 @@
+.topcontact {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    align-items: center;
+    font-weight: 600;
+    z-index: 1111;
+    transition: all .5s ease-in-out;
+}
+
+.contacthotel {
+
+    background: #0072bd;
+    z-index: 111111;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.order {
+    display: flex;
+    color: #FFf;
+    align-items: center;
+    font-weight: 600;
+    z-index: 111;
+}
+
+.topcontact a {
+    color: #FFF !important;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+}
+
+.closetop {
+    padding-left: 10px;
+    color: #FFF;
+    z-index: 111;
+    background: transparent !important;
+}
+
+.topcontact .order a {
+    padding: 3px 15px;
+    border-radius: 5px;
+    background: #f8c218;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+/*.contacthotel.fixedcontact {
+position: fixed;
+width: 100%;
+z-index: 1111;
+top: 0;
+left: 0;
+}*/
+@media(max-width:425px) {
+    .contacthotel {
+        position: fixed;
+        width: 100%;
+        z-index: 1111;
+        bottom: 0;
+        left: 0;
+        display: block !important;
+    }
+
+    .contacthotel.fixedcontact {
+        position: fixed;
+        width: 100%;
+        z-index: 1111;
+        top: 93%;
+        left: 0;
+    }
+
+    .topcontact {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+        align-items: center;
+        font-weight: 600;
+        z-index: 111;
+        transition: all .5s ease-in-out;
+        font-size: 13px;
+    }
+
+    .topcontact .order a {
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+}
+
+h1.title {
+    margin: 10em auto;
+    text-align: center;
+}
+
+h1.title span {
+    font-size: 3em;
+    color: #F2C640;
+    background: #262B37;
+    padding: 0 15px;
+    display: inline-block;
+    line-height: 100px;
+    animation: jumb 2s infinite;
+}
+
+@keyframes jumb {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+        box-shadow: 0 15px 0 #f2c640;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.page-item.active .page-link
+{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #000000;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+

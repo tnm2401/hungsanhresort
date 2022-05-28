@@ -1,0 +1,2075 @@
+body {
+    font-size: 1.4rem;
+    font-family: "Noto Serif", serif !important;
+    color: #222;
+    /* line-height: 1.5; */
+    width: 100%;
+    overflow-x: hidden;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h2 {
+    font-size: 3.5rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.75rem 1.5rem;
+}
+.btn-action {
+    background-color: #ffda29;
+    border: 0;
+    position: relative;
+    color: #000;
+}
+.btn-action span {
+    position: relative;
+    z-index: 5;
+}
+.btn-action::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 0;
+    background-color: #debe22;
+    transition: 0.2s all linear;
+    z-index: 2;
+}
+.btn-action:hover {
+    color: #fff;
+}
+.btn-action:hover::before {
+    height: 100%;
+    transition: 0.2s all linear;
+}
+.about-us {
+    position: relative;
+    padding: 10rem 0;
+}
+.about__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.about__bg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.72);
+    height: 100%;
+    width: 100%;
+}
+.about__bg img {
+    height: 100%;
+}
+.about__img {
+    width: 100%;
+    height: 100%;
+}
+.about__img img {
+    height: 100%;
+}
+.about__detail {
+    width: 100%;
+    height: 100%;
+    background-color: #ffda29;
+    position: relative;
+    padding: 2.9rem 7.5rem 4.1rem;
+}
+.about__detail h2 {
+    font-size: 4.8rem;
+}
+.about__text {
+    margin-bottom: 20px;
+    color: #444;
+}
+.about_btn {
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .about-us {
+        padding: 5rem 0;
+    }
+    .about__detail {
+        padding: 2rem 2.5rem 3rem;
+    }
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 1.75rem;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn:disabled {
+    opacity: 0.65;
+}
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+/*! CSS Used from: https://suwayhotel.webhotel.vn/Content/css/fontawesome-pro-5.15.2/css/all.min.css */
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-star:before {
+    content: "\f005";
+}
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+/*! CSS Used from: https://suwayhotel.webhotel.vn/Content/css/style.css */
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+h3 {
+    /* margin-bottom: 1.5rem; */
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h3 {
+    font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.75rem 1.5rem;
+}
+.btn-action {
+    border-radius: 20px;
+    background: linear-gradient(to top, #cebb5a, #f9dd49);
+    border: none;
+    position: relative;
+    color: #000;
+}
+.btn-action span {
+    position: relative;
+    z-index: 5;
+}
+.btn-action::before {
+    border-radius: 20px;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 0;
+    background-color: #de9622;
+    transition: 0.2s all linear;
+    z-index: 2;
+}
+.btn-action:hover {
+    color: #fff;
+}
+.btn-action:hover::before {
+    height: 100%;
+    transition: 0.2s all linear;
+}
+.room-list {
+    padding: 0 8rem;
+}
+.room__item:nth-child(even) .row {
+    flex-direction: row-reverse;
+}
+.room__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.title-vector {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ea5836;
+    position: relative;
+    text-align: center;
+}
+
+.title-vector h2 {
+    display: inline-block;
+}
+.title-vector:before {
+    content: url("../../assets/img/vt2\ copy.png");
+}
+.title-vector:after {
+    content: url("../../assets/img/vt1\ copy.png");
+}
+
+.bg-cate-ss {
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/bgcate.png");
+    background: linear-gradient(rgb(255 255 255 / 50%), rgb(179 179 179 / 50%)),
+        url("../../assets/img/bgcate.png");
+    background-size: cover;
+}
+.room__detail {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 3rem 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    color: #5d5d5d;
+    background-color: #fff;
+}
+.room__detail a:hover {
+    color: #ffda29;
+}
+.room__title {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.room__rate {
+    color: #ffda29;
+}
+.img-front {
+    transition: all 0.5s linear;
+}
+.img-back {
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(240px) rotateX(-90deg);
+    transform: translateY(240px) rotateX(-90deg);
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+    z-index: 1;
+}
+.room__img:hover .img-front {
+    opacity: 0;
+    -webkit-transform: translateY(-110px) rotateX(90deg);
+    transform: translateY(-110px) rotateX(90deg);
+}
+.room__img:hover .img-back {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotateX(0deg);
+    transform: translateY(0px) rotateX(0deg);
+}
+/*! CSS Used from: https://suwayhotel.webhotel.vn/Content/css/responsive.css */
+@media (max-width: 1023px) {
+    .room-list {
+        padding: 0;
+    }
+    .room__item {
+        margin-bottom: 2rem;
+    }
+}
+
+.section__title {
+    text-align: center;
+}
+.section__title h3 {
+    font-size: 4.8rem;
+    padding-bottom: 3.1rem;
+}
+.sub__title {
+    position: relative;
+    margin-bottom: 20px;
+}
+.sub__title::after {
+    content: "";
+    margin-top: 10px;
+    position: absolute;
+    height: 1px;
+    width: 27rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background: #ffbf00;
+}
+.sub__title span {
+    display: block;
+    text-transform: capitalize;
+    color: #666;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 8px;
+}
+
+.gallery_filter {
+    margin-bottom: 5rem;
+}
+.filter {
+    list-style: none;
+    padding-left: 0;
+}
+.filter li {
+    cursor: pointer;
+    margin: 0 13px 0px;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.8rem;
+}
+.filter li:first-child {
+    margin-left: 0;
+}
+.filter li.active {
+    border-radius: 20px;
+    background-color: #ffda29;
+}
+.common_btn {
+    border-radius: 20px;
+    background: 0 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #333;
+    border: 2px solid #ffda29;
+    line-height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+.width-1-4 {
+    width: 25%;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.single_item {
+    cursor: url(https://suwayhotel.webhotel.vn/Content/images/plus_sign1.png),
+        auto;
+    display: block;
+    position: relative;
+}
+.single_item img {
+    height: 178px;
+}
+.single_item:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px) rotateY(0deg);
+    left: 0;
+}
+.single_item::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 15px;
+    transform: perspective(500px) rotateY(-90deg);
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.4s all linear;
+    visibility: hidden;
+}
+/*! CSS Used from: https://suwayhotel.webhotel.vn/Content/css/responsive.css */
+
+@media (max-width: 1023px) {
+    .width-1-4 {
+        width: 50%;
+    }
+    .filter {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .filter li {
+        margin: 0 10px 20px;
+    }
+    .common_btn {
+        padding: 0 32px;
+    }
+}
+@media (max-width: 767px) {
+    .single_item img {
+        height: 150px;
+    }
+}
+@media (max-width: 767px) {
+    .filter {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+    .filter li {
+        font-size: 1.4rem;
+        margin: 0 3px 10px;
+    }
+    .common_btn {
+        margin-top: 10px;
+        padding: 0px 12px;
+        line-height: 28px;
+    }
+}
+
+::-moz-selection {
+    background-color: #f6af38;
+    color: #fff;
+}
+::selection {
+    background-color: #f6af38;
+    color: #fff;
+}
+.sns-ul {
+    display: inline-flex;
+}
+.sns-ul li {
+    list-style: none;
+    margin: 5px;
+}
+img,
+iframe {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #f6af38;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+.columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.column {
+    padding: 0 15px;
+}
+.text-wrapper {
+    line-height: 1.6;
+}
+.text-wrapper p {
+    margin: 10px 0;
+}
+.ft-title {
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .ft-title {
+        margin-bottom: 15px;
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*! CSS Used from: Embedded */
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+.fb_iframe_widget span {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+.fb_iframe_widget iframe {
+    position: absolute;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#booking {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#booking::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.booking-form {
+    width: 60%;
+    margin-left: 20%;
+    opacity: 0.7;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.booking-form > form .row.no-margin {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.booking-form > form .row.no-margin > [class*="col-"] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.booking-form .form-group {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.booking-form .form-group:after {
+    content: "";
+    background: rgba(129, 131, 144, 0.15);
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    right: 0px;
+    width: 2px;
+    height: 75px;
+}
+
+.booking-form .form-control {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 20px;
+    color: #222;
+    font-weight: 400;
+    padding: 0;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: #818390;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: #818390;
+}
+
+.booking-form .form-control::placeholder {
+    color: #818390;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+    color: #818390;
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control + .select-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: #818390;
+    font-size: 14px;
+}
+
+.booking-form select.form-control + .select-arrow:after {
+    content: "\279C";
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+    color: black;
+    display: block;
+    font-weight: 400;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.booking-form .form-btn {
+    padding: 25px;
+}
+
+.booking-form .submit-btn {
+    background: #ffda29;
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    border-radius: 10px;
+    width: 90%;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.list_posts a {
+    text-decoration: none;
+}
+
+.postCard {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.postCard__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.postCard__body {
+    padding: 30px 20px;
+    background: #eeeeee;
+    transform: translateY(-20px);
+    transition: 0.4s;
+    position: relative;
+}
+
+.postCard__body h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3a3d45;
+}
+
+.postCard__body .date-time {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #5e3929;
+    text-align: center;
+    padding: 10px;
+}
+
+.postCard__body .date-time span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.postCard__body .date-time span.day {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.postCard:hover .postCard__body {
+    transform: translateY(0);
+}
+
+.box__img img {
+    width: 100%;
+    object-fit: cover;
+}
+.box__content {
+    background: #eeeeee;
+    padding: 50px 15px 15px 50px;
+}
+.box__content .title-post {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+ul.border-tb {
+    display: flex;
+    padding: 15px 0;
+    margin: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+ul.detail-user li {
+    list-style: none;
+    margin-right: 20px;
+}
+ul.detail-user li i.fa {
+    margin-right: 5px;
+}
+@media (max-width: 575px) {
+    .box__content {
+        padding: 50px 15px 15px 15px;
+    }
+    ul.detail-user li {
+        margin-right: 6px;
+    }
+}
+
+.noti {
+    cursor: pointer;
+    width: 30px;
+    font-weight: bold;
+    /* opacity: 0.5; */
+    background-color: #5e392a;
+    border: 1px solid black;
+    /* padding: 8px; */
+    /* width: 255px; */
+    position: absolute;
+    top: -15px;
+    right: 36px;
+    border-radius: 15px;
+    height: 27px;
+    text-align: center;
+    color: white;
+    margin-top: -2x;
+    height: 30px;
+    font-size: 18px;
+}
+
+.shot-thumbnail-container .shot-thumbnail-base {
+    position: relative;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.shot-thumbnail-container .shot-thumbnail-base:hover .shot-thumbnail-overlay {
+    opacity: 1;
+}
+
+.shot-thumbnail-container
+    .shot-thumbnail-base:hover
+    .shot-thumbnail-extras-icon {
+    opacity: 0;
+}
+
+.shot-thumbnail-container .shot-thumbnail-overlay {
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 20px;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+    border-radius: 8px;
+    opacity: 0;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(62%, transparent),
+        color-stop(63.94%, rgba(0, 0, 0, 0.00345888)),
+        color-stop(65.89%, rgba(0, 0, 0, 0.014204)),
+        color-stop(67.83%, rgba(0, 0, 0, 0.0326639)),
+        color-stop(69.78%, rgba(0, 0, 0, 0.0589645)),
+        color-stop(71.72%, rgba(0, 0, 0, 0.0927099)),
+        color-stop(73.67%, rgba(0, 0, 0, 0.132754)),
+        color-stop(75.61%, rgba(0, 0, 0, 0.177076)),
+        color-stop(77.56%, rgba(0, 0, 0, 0.222924)),
+        color-stop(79.5%, rgba(0, 0, 0, 0.267246)),
+        color-stop(81.44%, rgba(0, 0, 0, 0.30729)),
+        color-stop(83.39%, rgba(0, 0, 0, 0.341035)),
+        color-stop(85.33%, rgba(0, 0, 0, 0.367336)),
+        color-stop(87.28%, rgba(0, 0, 0, 0.385796)),
+        color-stop(89.22%, rgba(0, 0, 0, 0.396541)),
+        color-stop(91.17%, rgba(0, 0, 0, 0.4))
+    );
+    background: linear-gradient(
+        180deg,
+        transparent 62%,
+        rgba(0, 0, 0, 0.00345888) 63.94%,
+        rgba(0, 0, 0, 0.014204) 65.89%,
+        rgba(0, 0, 0, 0.0326639) 67.83%,
+        rgba(0, 0, 0, 0.0589645) 69.78%,
+        rgba(0, 0, 0, 0.0927099) 71.72%,
+        rgba(0, 0, 0, 0.132754) 73.67%,
+        rgba(0, 0, 0, 0.177076) 75.61%,
+        rgba(0, 0, 0, 0.222924) 77.56%,
+        rgba(0, 0, 0, 0.267246) 79.5%,
+        rgba(0, 0, 0, 0.30729) 81.44%,
+        rgba(0, 0, 0, 0.341035) 83.39%,
+        rgba(0, 0, 0, 0.367336) 85.33%,
+        rgba(0, 0, 0, 0.385796) 87.28%,
+        rgba(0, 0, 0, 0.396541) 89.22%,
+        rgba(0, 0, 0, 0.4) 91.17%
+    );
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.shot-title {
+    color: white;
+    font-weight: bold;
+}
+
+/*! CSS Used from: http://happypharmacy.vn/frontend/bower_components/bootstrap4/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/assets/css/vendor/vendor.min.css */
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/bower_components/bootstrap4/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/assets/css/style.css?ver=6 */
+
+
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 0px !important;
+}
+ul {
+    margin-bottom: 0px !important;
+}
+
+
+body div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+*,
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+    outline-width: 0;
+}
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+a {
+    color: inherit;
+}
+:disabled * {
+    pointer-events: none;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+}
+a {
+    cursor: pointer;
+}
+body div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.chat-nav {
+    position: fixed;
+    left: 13px;
+    background: #fff;
+    border-radius: 5px;
+    width: auto;
+    z-index: 150;
+    bottom: 68px;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2;
+}
+.chat-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.chat-nav ul li {
+    list-style: none !important;
+}
+.chat-nav ul > li a {
+    border: none;
+    padding: 3px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    color: #515151;
+    font-weight: 700;
+    max-width: 75px;
+    max-height: 55px;
+    text-decoration: none;
+}
+.chat-nav ul > li .chat_animation {
+    display: none;
+}
+.chat-nav ul > li a i.ticon-heart {
+    background: url(http://happypharmacy.vn/images/icon-map.png) no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i.ticon-zalo-circle2 {
+    background: url(http://happypharmacy.vn/images/widget_icon_zalo.svg)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i.ticon-zalo-circle3 {
+    background: url(http://happypharmacy.vn/images/facebook_messenger.png)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i {
+    width: 33px;
+    height: 33px;
+    display: block;
+    margin: auto;
+}
+.chat-nav ul > li a i.ticon-chat-sms {
+    background: url(http://happypharmacy.vn/images/icon-sms.jpeg) no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a .call-mobile-style {
+    background: url(http://happypharmacy.vn/images/widget_icon_click_to_call.svg)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .chat-nav li .call-mobile {
+        position: relative;
+    }
+    .chat-nav li .call-mobile-style {
+        box-shadow: none;
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 100%;
+        line-height: 15px;
+        border: 2px solid white;
+    }
+    .chat-nav li .call-mobile .btn_phone_txt {
+        position: relative;
+        top: 35px;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: none;
+    }
+    .chat-nav ul > li a i {
+        width: 100%;
+    }
+    .chat-nav li .chat_animation {
+        display: block !important;
+    }
+    .chat-nav ul > li a {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .chat-nav {
+        background: white;
+        width: 100%;
+        border-radius: 0;
+        color: #fff;
+        height: 60px;
+        line-height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        padding: 5px;
+        margin: 0;
+        box-shadow: 0 4px 10px 0 #000;
+    }
+    .chat-nav li {
+        float: left;
+        width: 20%;
+        list-style: none;
+        height: 50px;
+    }
+}
+/*! CSS Used from: Embedded */
+a[rel~="nofollow"] {
+    outline: 0.14em dotted red !important;
+    outline-offset: 0.2em;
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/bower_components/bootstrap4/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/assets/css/vendor/vendor.min.css */
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/bower_components/bootstrap4/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+}
+/*! CSS Used from: http://happypharmacy.vn/frontend/assets/css/style.css?ver=6 */
+
+
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 0px !important;
+}
+ul {
+    margin-bottom: 0px !important;
+}
+
+
+body div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+*,
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+    outline-width: 0;
+}
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+a {
+    color: inherit;
+}
+:disabled * {
+    pointer-events: none;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+}
+a {
+    cursor: pointer;
+}
+body div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+span,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*  */
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+body div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.chat-nav {
+    position: fixed;
+    left: 13px;
+    background: #fff;
+    border-radius: 5px;
+    width: auto;
+    z-index: 150;
+    bottom: 68px;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2;
+}
+.chat-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.chat-nav ul li {
+    list-style: none !important;
+}
+.chat-nav ul > li a {
+    border: none;
+    padding: 3px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    color: #515151;
+    font-weight: 700;
+    max-width: 75px;
+    max-height: 55px;
+    text-decoration: none;
+}
+.chat-nav ul > li .chat_animation {
+    display: none;
+}
+.chat-nav ul > li a i.ticon-heart {
+    background: url(http://happypharmacy.vn/images/icon-map.png) no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i.ticon-zalo-circle2 {
+    background: url(http://happypharmacy.vn/images/widget_icon_zalo.svg)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i.ticon-zalo-circle3 {
+    background: url(http://happypharmacy.vn/images/facebook_messenger.png)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a i {
+    width: 33px;
+    height: 33px;
+    display: block;
+    margin: auto;
+}
+.chat-nav ul > li a i.ticon-chat-sms {
+    background: url(http://happypharmacy.vn/images/icon-sms.jpeg) no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.chat-nav ul > li a .call-mobile-style {
+    background: url(http://happypharmacy.vn/images/widget_icon_click_to_call.svg)
+        no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .chat-nav li .call-mobile {
+        position: relative;
+    }
+    .chat-nav li .call-mobile-style {
+        box-shadow: none;
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 100%;
+        line-height: 15px;
+        border: 2px solid white;
+    }
+    .chat-nav li .call-mobile .btn_phone_txt {
+        position: relative;
+        top: 35px;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: none;
+    }
+    .chat-nav ul > li a i {
+        width: 100%;
+    }
+    .chat-nav li .chat_animation {
+        display: block !important;
+    }
+    .chat-nav ul > li a {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .chat-nav {
+        background: white;
+        width: 100%;
+        border-radius: 0;
+        color: #fff;
+        height: 60px;
+        line-height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        padding: 5px;
+        margin: 0;
+        box-shadow: 0 4px 10px 0 #000;
+    }
+    .chat-nav li {
+        float: left;
+        width: 20%;
+        list-style: none;
+        height: 50px;
+    }
+}
+/*! CSS Used from: Embedded */
+a[rel~="nofollow"] {
+    outline: 0.14em dotted red !important;
+    outline-offset: 0.2em;
+}

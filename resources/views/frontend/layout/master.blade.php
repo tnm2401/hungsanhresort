@@ -1,0 +1,5 @@
+@include('frontend.layout.header')
+@include('frontend.layout.menu')
+@include('sweetalert::alert')
+@yield('content')
+@include('frontend.layout.footer')
